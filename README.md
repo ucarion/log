@@ -6,7 +6,7 @@
 `github.com/ucarion/log` provides structured, canonical, `context`-based logs in
 Golang on top of any existing logging backend. The core idea of canonical
 logging is to output fewer, better logs -- say, one per HTTP request served.
-With this package, you will add a bit more context the log in many places:
+With this package, you will add a bit more context to the log in many places:
 
 ```go
 // Set a field to the current canonical log line -- this does not output anything.
