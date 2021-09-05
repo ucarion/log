@@ -55,7 +55,7 @@ log.Set(ctx, "rpc", "ListUsers")
 log.Set(ctx, "err", err)
 
 // Fire off a canonical log line.
-log.Log("request")
+log.Log(ctx, "request")
 ```
 
 For a more advanced usage, you can also have nested properties by using
@@ -71,7 +71,7 @@ log.Set(ctx2, "foo", "bar")
 // Outputs something like, depending your backend:
 //
 // { "msg": "example", "data": { "root": "level", "nested": { "foo": "bar" }}}}
-log.Log("example")
+log.Log(ctx, "example")
 ```
 
 ## Backends
